@@ -1,0 +1,22 @@
+{
+  "name": "planilha",
+  "version": "1.0.0",
+  "description": "Projeto Warren Tech Academy",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/DiegoAzvdo/Planilha.git"
+    },
+    "author": "Diego",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/DiegoAzvdo/Planilha/issues"
+    },
+    "homepage": "https://github.com/DiegoAzvdo/Planilha#readme"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
