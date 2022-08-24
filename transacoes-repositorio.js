@@ -14,15 +14,11 @@ let transacoes = {
 class TransacoesRepositorio {
 
     listarTransacoes() {
-        return this.transacoes
-    }
-
-    listarTransacoes() {
         return transacoes
     }
 
     criarTransacao(transacao) {
-        const list = transacoes.transacoes
+        const lista = transacoes.transacoes
         lista.push(transacao)
     }
 }

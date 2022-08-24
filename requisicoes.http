@@ -1,0 +1,8 @@
+https://3000-diegoazvdo-planilha-4922zxw0e7s.ws-us62.gitpod.io/transacoes
+
+###
+
+POST https://3000-diegoazvdo-planilha-4922zxw0e7s.ws-us62.gitpod.io/transacoes
+Content-Type: aplication/json
+
+{"valor":10}
