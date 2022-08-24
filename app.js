@@ -5,7 +5,7 @@ const port = 3000
 
 app.use(express.static(`${__dirname}/public`))
 
-app.get('/ola', (req, res) => {
+app.get('/transacoes', (req, res) => {
     res.send("Ola mundo!")
 });
 
