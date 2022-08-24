@@ -14,6 +14,16 @@ app.get('/transacoes', (req, res) => {
     res.send(transacoes)
 })
 
+app.get('/criar-transacao', (req, res) => {
+    const repositorio = new TransacoesRepositorio()
+    const transacoes = {
+        valor: 10,
+        descricao: "pastel"
+    }
+    repositorio.criarTransacao(transacao)
+    res.status(201).send(transacao)
+})
+
 app.listen(port, () => {
     console.log(`servidor ouvindo na porta ${port}`);
 });
