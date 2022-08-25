@@ -63,7 +63,7 @@ function adicionaTransacoes(transacoes) {
 document.getElementById('botao-despesa').addEventListener('click', adicionarDespesa);
 document.getElementById('botao-receita').addEventListener('click', adicionarReceita);
 async function getTransacoes() {
-    const url = 'https://run.mocky.io/v3/ba2007f7-04ea-465b-985e-b16c11e8061d';
+    const url = ("/transacoes");
     const resposta = await fetch(url);
     const financas = await resposta.json();
     setSaldo(financas.saldo);
@@ -71,7 +71,7 @@ async function getTransacoes() {
     console.log(financas);
 }
 async function enviaDados(transacao) {
-    const url = 'https://run.mocky.io/v3/c50981e7-1c9b-471c-9128-3adf362cf36f';
+    const url = ("/transacoes")
     const requisicao = await fetch(url, { method: 'POST', body: JSON.stringify(transacao) })
 }
 getTransacoes();
