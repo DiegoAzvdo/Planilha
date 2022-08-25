@@ -2,13 +2,16 @@ let transacoes = {
     transacoes: [
         {
             valor: 10,
-            descricao: "Pastel"
+            descricao: "Pastel",
+            categoria: "Despesa"
         },
         {
             valor: 3,
-            descricao: "doce"
+            descricao: "Venda do Doce",
+            categoria: "Receita"
         }
-    ]
+    ],
+    saldo: 0
 }
 
 class TransacoesRepositorio {

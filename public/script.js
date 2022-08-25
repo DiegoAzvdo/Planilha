@@ -18,6 +18,8 @@ function adicionarDespesa() {
         valor: valor,
         categoria: 'Despesa'
     };
+    console.log(despesa)
+
     enviaDados(despesa);
     getTransacoes();
 }
@@ -44,6 +46,7 @@ function adicionarReceita() {
 }
 function setSaldo(saldo) {
     document.getElementById('saldo').innerHTML = `Saldo: R$ ${saldo}`;
+   
 }
 
 function adicionaTransacoes(transacoes) {
@@ -69,9 +72,19 @@ async function getTransacoes() {
     setSaldo(financas.saldo);
     adicionaTransacoes(financas.transacoes);
     console.log(financas);
+    
 }
 async function enviaDados(transacao) {
-    const url = ("/transacoes")
-    const requisicao = await fetch(url, { method: 'POST', body: JSON.stringify(transacao) })
+    console.log('transacao' + JSON.stringify(transacao))
+    const requisicao = {
+        method: 'POST',
+        body: JSON.stringify(transacao),
+        headers: {
+            "content-type": "application/json"
+        }
+    };
+    await fetch('/transacoes', requisicao);
+
+
 }
 getTransacoes();
