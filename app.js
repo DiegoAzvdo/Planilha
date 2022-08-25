@@ -10,7 +10,6 @@ app.use(express.static(`${__dirname}/public`))
 app.get('/transacoes', (req, res) => {
     const repositorio = new TransacoesRepositorio()
     const transacoes = repositorio.listarTransacoes()
-
     res.send(transacoes)
 })
 
