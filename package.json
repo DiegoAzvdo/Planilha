@@ -4,6 +4,7 @@
   "description": "Projeto Warren Tech Academy",
   "main": "app.js",
   "scripts": {
+    "start": "node aap.js",
     "dev": "nodemon app.js",
     "repository": {
       "type": "git",
